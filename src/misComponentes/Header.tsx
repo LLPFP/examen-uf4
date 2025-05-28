@@ -1,16 +1,22 @@
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
-
+import Link from "next/link";
 export function Header() {
   return (
     <Menubar className=" bg-black p-4 text-gray-200 shadow-md rounded-none border-b border-black flex flex-row items-center justify-between">
       <MenubarMenu>
-        <MenubarTrigger>Pandem</MenubarTrigger>
+        <MenubarTrigger>
+          <Link href="/">Pandem</Link>
+        </MenubarTrigger>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>Docs</MenubarTrigger>
+        <MenubarTrigger>
+          <Link href="/docs">Docs</Link>
+        </MenubarTrigger>
       </MenubarMenu>
       <MenubarMenu>
-        <MenubarTrigger>Pricing</MenubarTrigger>
+        <MenubarTrigger>
+          <Link href="/pricing">Pricing</Link>
+        </MenubarTrigger>
       </MenubarMenu>
       <MenubarMenu>
         <MenubarTrigger>Status</MenubarTrigger>
