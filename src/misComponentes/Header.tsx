@@ -6,7 +6,7 @@ export function Header() {
   return (
     <Menubar className="bg-black p-4 text-gray-300 shadow-md rounded-none border-b border-black flex flex-row items-center justify-between">
       <div className="flex justify-center items-center space-x-4 mx-auto">
-        <MenubarMenu className="text-gray-100">
+        <MenubarMenu>
           <MenubarTrigger className="text-lg font-bold flex items-center">
             <HiFingerPrint className="inline-block mr-3 w-6 h-6" />
             <Link href="/" className="hover:underline">
