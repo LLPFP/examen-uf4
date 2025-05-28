@@ -1,4 +1,3 @@
-import { Header } from "@/misComponentes/Header";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
@@ -8,26 +7,25 @@ import { HiArrowsUpDown } from "react-icons/hi2";
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="flex min-h-screen flex-col items-center pt-20  text-center">
-        <section className="flex flex-col items-center justify-center pt-20 ">
-          <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl max-w-4xl">
+        <section className="flex flex-col items-center justify-center px-4 md:px-8">
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-6xl max-w-4xl text-center">
             Information you need during on-call emergencies
           </h1>
-          <p className="text-xl mt-4 max-w-2xl mt-10">
+          <p className="text-lg mt-4 max-w-2xl md:text-xl mt-6 text-center">
             Quickly link new on-call tickets to similar past incidents and their
             solutions. All directly in Slack the moment an incident happens.
           </p>
-          <Button className="mt-10 bg-white text-black ">
-            Get Started <ChevronRight></ChevronRight>
+          <Button className="mt-8 bg-white text-black px-6 py-3 text-sm md:text-base">
+            Get Started <ChevronRight className="ml-2" />
           </Button>
           <Image
             src="/images/imgSection1.png"
             alt="Imagen Content Overview"
-            className="w-full max-w-7xl mt-12 shadow-lg"
+            className="w-full max-w-7xl mt-10 shadow-lg"
             width={1200}
             height={600}
-          ></Image>
+          />
         </section>
 
         <section className="flex flex-col items-center justify-center mt-20 pt-10">
@@ -37,7 +35,7 @@ export default function Home() {
 
           <div className="flex flex-row items-start justify-center mt-15 space-x-2">
             <div className="flex flex-col text-left max-w-md p-8 rounded-lg shadow-lg">
-              <CiStopwatch className="w-16 h-16 text-white mb-6 border border-gray-800 rounded p-3 max-w-3xl" />
+              <CiStopwatch className="w-16 h-16 text-white mb-6 border-2  border-gray-800 rounded p-3 max-w-3xl" />
 
               <h3 className="text-3xl font-bold mt-5 mb-5">
                 Fix emergencies fast
@@ -48,7 +46,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col text-left max-w-md p-8 rounded-lg shadow-lg">
-              <HiArrowsUpDown className="w-16 h-16 text-white mb-6 border border-gray-800 rounded p-3 max-w-3xl" />
+              <HiArrowsUpDown className="w-16 h-16 text-white mb-6 border-2 border-gray-800 rounded p-3 max-w-3xl" />
 
               <h3 className="text-3xl font-bold mt-5 mb-5">
                 Universally compatible
@@ -59,7 +57,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col text-left max-w-md p-8 rounded-lg shadow-lg">
-              <CiStopwatch className="w-16 h-16 text-white mb-6 border border-gray-800 rounded p-3 max-w-3xl" />
+              <CiStopwatch className="w-16 h-16 text-white mb-6 border-2  border-gray-800 rounded p-3 max-w-3xl" />
 
               <h3 className="text-3xl font-bold mt-5 mb-5">
                 Secure for your org
@@ -76,7 +74,7 @@ export default function Home() {
             Instant setup, no custom code
           </h1>
           <p className="text-xl mt-4 max-w-2xl mt-10">
-            Invite the bot, pick a channel, and you're set—no custom code
+            Invite the bot, pick a channel, and you&apos;re set—no custom code
             needed, and no vendor lock-in.
           </p>
 
@@ -94,8 +92,7 @@ export default function Home() {
             Get in touch
           </h1>
           <p className="text-xl mt-4 max-w-2xl mt-10">
-            Invite the bot, pick a channel, and you're set—no custom code
-            needed, and no vendor lock-in.
+            Request a demo, or hop on a call
           </p>
           <Button className="mt-10 bg-white text-black ">
             Get Started <ChevronRight></ChevronRight>
