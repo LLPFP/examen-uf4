@@ -1,10 +1,11 @@
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
 import Link from "next/link";
 import { HiFingerPrint } from "react-icons/hi2";
+import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
-    <Menubar className="bg-black p-4 text-gray-300 shadow-md rounded-none border-b border-black flex flex-row items-center justify-between">
+    <Menubar className="bg-black p-4 text-gray-300 shadow-md rounded-none border-b border-gray-600 flex flex-row items-center justify-between mt-4 mb-4 space-y-4">
       <div className="flex justify-center items-center space-x-4 mx-auto">
         <MenubarMenu>
           <MenubarTrigger className="text-lg font-bold flex items-center">
@@ -35,12 +36,14 @@ export function Header() {
         </MenubarMenu>
       </div>
 
-      <div className="flex justify-center items-center space-x-4 mx-auto">
+      <div className="flex justify-center items-center space-x-4 mx-auto mb-5">
         <MenubarMenu>
           <MenubarTrigger>Login</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger>Sign Up</MenubarTrigger>
+          <Button variant="outline" className="text-black">
+            Sign Up
+          </Button>
         </MenubarMenu>
       </div>
     </Menubar>

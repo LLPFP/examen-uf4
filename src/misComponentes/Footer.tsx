@@ -4,7 +4,7 @@ import { HiFingerPrint } from "react-icons/hi2";
 
 export function Footer() {
   return (
-    <Menubar className="bg-black p-4 text-gray-300 shadow-md rounded-none border-b border-black flex flex-row items-center justify-between">
+    <Menubar className="bg-black p-4 text-gray-300 shadow-md rounded-none border-t border-gray-500 flex flex-row items-center justify-between mt-4 mb-2 pb-1">
       <div className="flex justify-center items-center space-x-4 mx-auto">
         <MenubarMenu>
           <MenubarTrigger className="text-lg font-bold flex items-center">
